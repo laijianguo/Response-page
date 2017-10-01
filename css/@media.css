@@ -1,0 +1,249 @@
+/*@media*/
+
+
+/*屏幕800或以下显示*/
+@media only screen and (max-width: 50em) {
+    
+}
+/*屏幕481到800显示*/
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+    
+}
+/*屏幕481或以下显示*/
+@media only screen and (max-width: 30em) {
+    
+}
+
+
+/*------------------------------------------------网站头部*/
+@media only screen and (max-width: 50em){
+    header .top ul li a{
+        padding: 0 1rem;
+    }
+    header .main .brand{
+        float: none;
+        display: block;
+        padding: 0;
+        margin: 1.5rem auto 0.5rem;
+        text-align: center;
+    }
+    header .main ul{
+        text-align: center;
+    }
+    header .main ul li{
+        border:none;
+    }
+    header .main ul li a{
+        padding: 0 1rem;
+    }
+}
+@media only screen and (max-width: 30em){
+                                  /*:nth-child指选中第几个元素*/
+    header .top .tel,
+    header .top ul li:nth-child(3),
+    header .top ul li:nth-child(4){
+        display: none;
+    }
+    header .main ul li{
+        line-height: 3rem;
+    }
+    header .main ul li:first-child{
+        display: none;
+    }
+    header .main ul li a{
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
+}
+/*------------------------------------------------网站头部end*/
+
+/* -------------------------------------------------交易信息 */
+@media only screen and (max-width: 50em) {
+    .trans-data{
+        padding: 1rem 0.5rem; 
+    }
+    .trans-data span{
+        font-size:1.2rem;
+    }
+    .trans-data span.trans-money{
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0;
+        letter-spacing: inherit;  /*inherit：继承父元素*/
+        box-shadow: none;
+        background: transparent;    /*背景透明*/
+    }
+    .trans-report a{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    .transaction{
+        padding: 0.5rem 0;
+    }   
+    .trans-data, .trans-report{
+        float: none;
+        text-align: center;
+    }
+    .trans-data, .trans-report a{
+        padding: 0;
+    }
+}
+/* -------------------------------------------------交易信息 end*/
+
+
+
+
+
+/*------------------------------------------------平台特点 */
+/*屏幕800或以下显示*/
+@media only screen and (max-width: 50em) {
+    
+}
+/*屏幕481到800显示*/
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+    .feature .item h3,
+    .feature .item p{
+        display: block;
+        width: 100%;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    .feature .item p{
+        font-size: 1.2rem;
+    }
+}
+/*屏幕481或以下显示*/
+@media only screen and (max-width: 30em) {
+    .feature{
+        width: 96%;
+        margin: 1rem auto;
+    }
+    .feature .item{
+        display: block;
+        width: auto;
+    }
+    .feature .item + .item{
+        margin: 1rem 0 0 0;
+    }
+}
+/*------------------------------------------------平台特点 end*/
+
+/*------------------------------------------------------公告*/
+@media only screen and (max-width: 30em){
+    .notice{
+        width: 96%;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+    }
+    .notice a{
+        margin-left: 1rem;
+    }
+    .notice a span{
+        display: none;
+    }
+}
+/*------------------------------------------------------公告end*/
+
+/*--------------------------------------------产品列表*/
+@media only screen and (max-width: 50em) {
+    .product h2{
+        float: none;
+        width: 100%;
+        margin: 2rem 0;
+        font-size: 2.2rem;
+    }
+    .product h2 em:first-child{
+        margin-top:0;
+    }
+    .product h2 em{
+        display: inline;
+        font-size: 1.2rem;
+    }
+    .product .product-content{
+        float: none;
+        width: 100%;
+    }   
+    .product .product-content .item .info p span {
+        font-size: 1.5rem;
+    }
+    .product .product-content .item .info p{
+        font-size: 1rem;
+    }   
+    .product .product-content .item h3{       
+        margin:0;        
+    }
+    .product .product-content .item .info{
+        padding: 0;
+    }
+    .product .product-content .item .buy{
+        width: 20%;
+        padding: 0 0 0 3px;
+    }
+    .product .product-content .item .buy a{
+        margin: 8px auto;
+    }
+}
+@media only screen and (max-width: 30em){
+    .product{
+        width: 96%;
+    }
+    .product h2 em:first-child:before{    /*清除浮动*/
+        content: " ";
+        display: table;
+    }
+    .product .product-content .item .info{
+        float: right;
+        width: 70%;
+        padding: 1rem 0;
+        border: none;
+    }
+    .product .product-content .item h3{       
+        margin-top:1rem;        
+    }
+    .product .product-content .item .info p span{
+        font-size: 1.5rem;
+    }
+    .product .product-content .item .buy{
+        width: 100%;
+        padding:0 ;
+    }
+    .product .product-content .item .buy a{
+        margin: 0rem auto 1rem;
+        max-width: 20rem;
+
+    }
+}
+/*--------------------------------------------产品列表end*/
+
+/*------------------------------------------------底部导航*/
+@media only screen and (max-width: 50em){
+    .footer-content .brand{
+        display: none;
+    }
+    .footer-content ul{
+        display: inline-block;
+        width: 19%;
+        box-sizing: border-box;
+    }
+    .footer-content ul li{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .footer-content ul li.title{
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+}
+@media only screen and (max-width: 30em){
+    .footer-content{
+        width: 96%;
+
+    }
+    .footer-content ul li.title{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+}
+/*------------------------------------------------底部导航end*/
